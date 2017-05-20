@@ -105,11 +105,11 @@ article.warpper article .text-form form div input:focus{
 
 /*warpper-article-session*/
 article.warpper article .server-form{
-	padding: 1em 0 0 3.9em;
+	padding: .5em 0 .5em 30%;
 }
 
 article.warpper article .server-form form span{
-	margin-right: 36%;
+	margin-right: 5%;
 	font-size: 1.1em;
 }
 
