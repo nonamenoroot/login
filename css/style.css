@@ -1,13 +1,8 @@
-/*reset*/
+/*reset-start*/
 *{
 	margin: 0;
 	padding: 0;
 }
-body{
-	font-family: 'Open Sans', sans-serif;
-	background: url(../img/banner.jpg) no-repeat center;
-	background-size:cover ;
-	background-attachment: fixed; 
 	/*
 	 * background-attachment 取值
 	 * scrool:默认值，背景随页面滚动而移动，即背景和内容绑定。
@@ -15,21 +10,189 @@ body{
 	 * local：背景图相对于元素内容固定，
 	 * 
 	 * */
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: url(../img/banner.jpg) no-repeat center;
+	background-size:cover ;
+	background-attachment: fixed; 
 }
+/*reser-end*/
 
-/*warpper*/
+/*warpper-start*/
 article.warpper{
-	margin-top: 3%;
+	margin-top: 4%;
 }
 
+/*warpper-header-start */
 article.warpper header h1{
 	font-size: 3em;
     text-align: center;
     color: #fff;
     font-weight: 100;
 }
+/*warpper-header-end */
 
+/*warpper-article-start */
 article.warpper article{
-	width: 33%;
+	width: 35%;
+	height: 520px ;
 	background-color: rgba(8,67,86,0.5);
+	margin: 3.3em auto;
 }
+
+article.warpper article header h2{
+	background-color: rgb(2,162,153);
+	letter-spacing: 10px;
+	text-align: center;
+	padding: 1.3em;
+	color: white;
+	font-weight: 300;
+	font-size: 1.1em;
+}
+
+/*warpper-article-session*/
+article.warpper article  .text-form{
+	margin: 5em 3em 2.1em  3em ;
+}
+
+article.warpper article  .text-form form div{
+	 width:100%;
+  	margin: 2em 0 1.2em;
+  	position: relative;
+}
+
+article.warpper article .text-form form div input{
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	width: 90%;
+	padding: 0.8em 1em;
+	color: white;
+	font-size: 1em;
+	z-index: 1;
+}
+
+
+
+/*valid当输入框输入合法时，显示的值,zai 设置了必填属性，所以合法条件是必填*/
+.text-form form div input:focus ~ label,.text-form form div input:valid ~ label{
+	color: #02a299;
+	font-size: 1.1em;
+	top: -2em;
+	-webkit-transition: all 0.125s ease;
+}
+
+
+article.warpper article .text-form form div input:focus{
+	border-bottom: 2px solid white;
+	width: 91%;
+}
+
+  .text-form form div label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	padding: 0.8em 1em;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1em;
+	-webkit-transition: all 0.3s ease;
+	pointer-events: none;
+}
+
+
+/*warpper-article-session*/
+article.warpper article .server-form{
+	padding: 1em 0 0 6.5em;
+}
+
+article.warpper article .server-form form span{
+	margin-right: 36%;
+	font-size: 1.1em;
+}
+
+article.warpper article .server-form form span input+label,article.warpper article .server-form form span input{
+	font-size: 1em;
+	color: #fff;
+	cursor: pointer;
+	
+}
+article.warpper article .server-form form span a{
+	text-decoration: none;
+	color: #fff;
+}
+article.warpper article .server-form form span a:hover{
+	color:#02a299;
+}
+article.warpper article .server-form form span a:active{
+	color:#029999;
+}
+
+/*warpper-article-session*/
+article.warpper article .login-btn form input {
+	width: 106%;
+	height:3.2em;
+	letter-spacing: 1px;
+	color: #029999;
+	font-size: 1.4em;
+	margin: 1.3em 0 0 -3%;
+	background: white;
+	outline: none;
+	border: 0;
+}
+
+article.warpper article .login-btn{
+	position: relative;
+}
+
+article.warpper article .login-btn:before {
+	content: '';
+	border-top: 20px solid transparent;
+	border-right: 20px solid white;
+	position: absolute;
+	left: -20px;
+	top: 9px;
+	/*放置变成梯形*/
+	font-size: 0;  
+}
+
+
+article.warpper article .login-btn:after {
+	content: '';
+	border-top: 20px solid transparent;
+	border-left: 20px solid white;
+	position: absolute;
+	left: 100%;
+	top: 9px;
+	/*放置变成梯形*/
+	font-size: 0;  
+}
+article.warpper article .login-btn:hover:before{
+	border-right: 20px solid #02a299;
+	-webkit-transition: all 1s ease;
+}
+
+
+article.warpper article .login-btn:hover:after{
+	border-left: 20px solid #02a299;
+	-webkit-transition: all 1s ease;
+}
+
+article.warpper article .login-btn form input:hover{
+	background: #02a299;
+	color: white;
+	-webkit-transition: all 1s ease;
+}
+
+
+/*warpper-article-end */
+
+/*footer-start*/
+footer{
+	color: white;
+	text-align: center;
+}
+
+/*footer-end*/
