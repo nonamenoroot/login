@@ -13,7 +13,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	background: url(../img/banner.jpg) no-repeat center;
-	background-size:cover ;
+/**/background-size:cover ; 
 	background-attachment: fixed; 
 }
 /*reser-end*/
@@ -56,7 +56,7 @@ article.warpper article  .text-form{
 }
 
 article.warpper article  .text-form form div{
-	 width:100%;
+	width:100%;
   	margin: 2em 0 1.2em;
   	position: relative;
 }
@@ -99,7 +99,7 @@ article.warpper article .text-form form div input:focus{
 	font-weight: 400;
 	line-height: 1em;
 	-webkit-transition: all 0.3s ease;
-	pointer-events: none;
+/**/	pointer-events: none;
 }
 
 
