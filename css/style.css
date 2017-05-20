@@ -113,7 +113,8 @@ article.warpper article .server-form form span{
 	font-size: 1.1em;
 }
 
-article.warpper article .server-form form span input+label,article.warpper article .server-form form span input{
+article.warpper article .server-form form span input+label,
+article.warpper article .server-form form span input{
 	font-size: 1em;
 	color: #fff;
 	cursor: pointer;
@@ -141,6 +142,7 @@ article.warpper article .login-btn form input {
 	background: white;
 	outline: none;
 	border: 0;
+	-webkit-transition: background-color .3s ease;
 }
 
 article.warpper article .login-btn{
@@ -156,6 +158,7 @@ article.warpper article .login-btn:before {
 	top: 9px;
 	/*放置变成梯形*/
 	font-size: 0;  
+	-webkit-transition: all .3s ease;
 }
 
 
@@ -168,24 +171,28 @@ article.warpper article .login-btn:after {
 	top: 9px;
 	/*放置变成梯形*/
 	font-size: 0;  
+	-webkit-transition: all .3s ease;
 }
 article.warpper article .login-btn:hover:before{
 	border-right: 20px solid #02a299;
-	-webkit-transition: all 1s ease;
+	-webkit-transition: all .3s ease;
 }
 
 
 article.warpper article .login-btn:hover:after{
 	border-left: 20px solid #02a299;
-	-webkit-transition: all 1s ease;
+	-webkit-transition: all .3s ease;
 }
 
 article.warpper article .login-btn form input:hover{
 	background: #02a299;
 	color: white;
-	-webkit-transition: all 1s ease;
+	-webkit-transition: all .3s ease;
 }
 
+article.warpper article .login-btn form input:active{
+	line-height: 3.6em;;
+}
 
 /*warpper-article-end */
 
