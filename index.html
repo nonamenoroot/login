@@ -8,7 +8,7 @@
 		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
 	</head>
 	<body>
-		<article class="warpper">
+		<article class="warpper" id="main">
 			<!--头部-->
 			<header>
 				<h1>Badge Sign In Form</h1>
@@ -45,7 +45,7 @@
 							<label for="student">学生</label>
 						</span>
 						<span>
-							<a href="#">Teacher Register？</a>
+							<a href="#" id="register">Teacher Register？</a>
 						</span>
 					</form>
 				</section>
@@ -61,4 +61,12 @@
 			</footer>
 		</article>
 	</body>
+	<script>
+		var register = document.getElementById('register');
+		var main = document.getElementById('main');
+		register.onclick = function(){
+			main.style.display = "none";
+		};
+		
+	</script>
 </html>
