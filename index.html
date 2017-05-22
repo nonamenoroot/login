@@ -60,12 +60,128 @@
 				© 2016 Badge Sign In Form . All rights reserved | Design by W3layouts
 			</footer>
 		</article>
+		
+		<article class="warpper" id="main2" >
+			<!--头部-->
+			<header>
+				<h1>Badge Sign In Form</h1>
+			</header>
+			<!--主体-->
+			<article style="height: 580px;">
+				<!--主体的头部-->
+				<header><h2>Register Form</h2></header>
+				<!--主体的三个节-->
+				<section class="text-form2" >
+					<form action="#">
+						<div>
+							<span>
+								<input type="text" name="userName" id="userName" value="" title="请填写此字段" required=""/>
+								<label for="userName">账号</label>
+							</span>
+							<span>
+								<input type="password" name="password" id="password"  title="请填写此字段" value="" required="" />
+								<label for="password">密码</label>
+							</span>
+						</div>
+						<div>
+							<span>
+								<input type="text" name="userName" id="teaName" value="" title="请填写此字段" required=""/>
+								<label for="teaName">姓名</label>
+							</span>
+							<span>
+								<select name="Sex" id="sex-select">
+								<option value="null"></option>
+								<option value="男">man</option>
+								<option value="女">woman</option>
+								</select>
+								<label id="sex-label" >性别</label>
+							</span>
+						</div>
+						<div>
+							<span>
+								<input type="text" name="userName" id="stuEmail" value="" title="请填写此字段" required=""/>
+								<label for="stuEmail">邮箱</label>
+							</span>
+							<span>
+								<select name="Title" id="title-select">
+								<option value="null"></option>
+								<option value="助教">助教</option>
+								<option value="讲师">讲师</option>
+								<option value="副教授">副教授</option>
+								<option value="教授">教授</option>
+								</select>
+								<label id="title-label" >职称</label>
+							</span>
+						</div>
+						<div>
+							<span>
+								<select name="Degree" id="Degree-select">
+								<option value="null"></option>
+								<option value="学士">学士</option>
+								<option value="硕士">硕士</option>
+								<option value="博士">博士</option>
+								</select>
+								<label id="Degree-label" >职称</label>
+							</span>
+							<span>
+								<input type="text" name="userName" id="depId" value="" title="请填写此字段" required=""/>
+								<label for="depId">学院</label>
+							</span>
+						</div>
+					</form>
+				</section>
+				<section class="login-btn">
+					<form action="#">
+						<input type="submit" name="loginSubmit" id="loginSubmit" value="RES IN" />
+					</form>
+				</section>
+			</article>
+		</article>
 	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script>
+		//注册事件
 		var register = document.getElementById('register');
 		var main = document.getElementById('main');
+		var main2 = document.getElementById('main2');
 		register.onclick = function(){
 			main.style.display = "none";
+			main2.style.display = "block";
+		};
+		window.onload = function(){
+			//下拉选择框改变事件
+			var selecct = document.getElementById('sex-select'),
+				tselect = document.getElementById('title-select'),
+				dselect = document.getElementById('Degree-select');
+				
+				//性别选择变化事件
+				selecct.onchange = function(){
+					if(selecct.selectedIndex!=0){
+						$("#sex-label").removeClass('bb').addClass('aa');
+					}
+					else{
+						$("#sex-label").removeClass('aa').addClass('bb');
+					}
+				};
+				//职称
+				
+				tselect.onchange = function(){
+					if(tselect.selectedIndex!=0){
+						$("#title-label").removeClass('bb').addClass('aa');
+					}
+					else{
+						$("#title-label").removeClass('aa').addClass('bb');
+					}
+				};
+				//学位
+				dselect.onchange = function(){
+					if(dselect.selectedIndex!=0){
+						$("#Degree-label").removeClass('bb').addClass('aa');
+					}
+					else{
+						$("#Degree-label").removeClass('aa').addClass('bb');
+					}
+				};
 		};
 		
 	</script>

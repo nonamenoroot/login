@@ -207,3 +207,94 @@ footer{
 }
 
 /*footer-end*/
+
+/*注册*/
+/*warpper-article-session*/
+article.warpper article  .text-form2{
+	margin: 5em 3em 2.1em  3em ;
+}
+
+article.warpper article  .text-form2 form div{
+	width:100%;
+  	margin: 1em 0 1em 1em;
+}
+article.warpper article .text-form2 form div span{
+	position: relative;
+}
+article.warpper article .text-form2 form div span input,.text-form2 form div span select{
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	width: 40%;
+	padding: 0.8em 1em;
+	color: white;
+	font-size: 1em;
+	z-index: 1;
+}
+.text-form2 form div span select{
+	width: 46%;
+}
+
+.text-form2 form div span select  option{
+	color: #029999;
+}
+
+/*valid当输入框输入合法时，显示的值,zai 设置了必填属性，所以合法条件是必填*/
+.text-form2 form div span input:focus ~ label,.text-form2 form div input:valid ~ label
+{
+	color: #02a299;
+	font-size: 1.1em;
+	top: -2em;
+	-webkit-transition: all 0.125s ease;
+}
+
+
+#main2{
+	display: none;
+}
+
+
+article.warpper article .text-form2 form div span input:focus{
+	border-bottom: 2px solid white;
+	width: 40%;
+}
+
+  .text-form2 form div span label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	padding: 0.8em 1em;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1em;
+	-webkit-transition: all 0.3s ease;
+/**/pointer-events: none;
+}
+
+/*text-form2 form div span label.ss{
+	color: #02a299;
+	font-size: 1.1em;
+	top: -2em;
+	-webkit-transition: all 0.125s ease;
+}*/
+
+.text-form2 form div span label.aa{
+	color: #02a299;
+	font-size: 1.1em;
+	top: -2em;
+	-webkit-transition: all 0.125s ease;
+}
+.text-form2 form div span label.bb{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	padding: 0.8em 1em;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1em;
+	-webkit-transition: all 0.3s ease;
+/**/pointer-events: none;
+}
