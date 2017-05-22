@@ -15,6 +15,7 @@ body{
 	background: url(../img/banner.jpg) no-repeat center;
 /**/background-size:cover ; 
 	background-attachment: fixed; 
+	
 }
 /*reser-end*/
 
@@ -234,6 +235,8 @@ article.warpper article .text-form2 form div span input,.text-form2 form div spa
 }
 .text-form2 form div span select{
 	width: 46%;
+	font-size: 1.1em;
+	
 }
 
 .text-form2 form div span select  option{
@@ -252,6 +255,7 @@ article.warpper article .text-form2 form div span input,.text-form2 form div spa
 
 #main2{
 	display: none;
+	
 }
 
 
